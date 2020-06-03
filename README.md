@@ -12,6 +12,7 @@ https://www.acmicpc.net/problem/2309
 2309번 일곱 난쟁이   
 https://www.acmicpc.net/problem/10093   
 10093번 숫자   
+
 >>>https://blog.encrypted.gg/725   
 배열과 연결리스트   
 >>>>https://www.acmicpc.net/problem/1406   
