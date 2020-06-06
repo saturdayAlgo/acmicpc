@@ -18,3 +18,28 @@ https://www.acmicpc.net/problem/10093
 1406번 에디터   
 https://www.acmicpc.net/problem/1475   
 1475번 방 번호   
+
+>2020-06-07~2020-06-12   
+>>스택,큐,덱~BFS,DFS
+>>>https://blog.encrypted.gg/727   
+스택,큐,덱   
+>>>>https://www.acmicpc.net/problem/10828   
+10828번 스택   
+https://www.acmicpc.net/problem/10845   
+10845번 큐   
+https://www.acmicpc.net/problem/10866   
+10866번 덱   
+
+>>>https://blog.encrypted.gg/728   
+스택 1(수식의 괄호 쌍)   
+>>>>https://www.acmicpc.net/problem/9012   
+9012번 괄호   
+https://www.acmicpc.net/problem/10799   
+10799번 쇠막대기   
+
+>>>https://blog.encrypted.gg/729   
+BFS, DFS   
+>>>>https://www.acmicpc.net/problem/1926   
+1926번 그림   
+https://www.acmicpc.net/problem/7576   
+7576번 토마토   
