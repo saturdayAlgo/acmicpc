@@ -27,7 +27,6 @@ public class Main {
 			
 			System.out.println(ysCost<msCost?"Y " + ysCost:ysCost==msCost?"Y M " + ysCost:"M " + msCost);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
