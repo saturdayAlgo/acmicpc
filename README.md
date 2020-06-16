@@ -43,3 +43,19 @@ BFS, DFS
 1926번 그림   
 https://www.acmicpc.net/problem/7576   
 7576번 토마토   
+
+>2020-06-15~2020-06-20   
+>>재귀~백트래킹, 시뮬레이션
+>>>https://blog.encrypted.gg/731   
+재귀   
+>>>>https://www.acmicpc.net/problem/1074   
+1074번 Z   
+https://www.acmicpc.net/problem/1629   
+1629번 곱셈   
+
+>>>https://blog.encrypted.gg/732   
+백트래킹, 시뮬레이션   
+>>>>https://www.acmicpc.net/problem/14889   
+14889번 스타트와 링크   
+https://www.acmicpc.net/problem/15649   
+15649번 N과 M (1)   
