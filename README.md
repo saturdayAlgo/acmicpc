@@ -59,3 +59,16 @@ https://www.acmicpc.net/problem/1629
 14889번 스타트와 링크   
 https://www.acmicpc.net/problem/15649   
 15649번 N과 M (1)   
+
+>2020-06-22~2020-06-26   
+>>정렬
+>>>https://blog.encrypted.gg/734   
+정렬   
+>>>>https://www.acmicpc.net/problem/1181   
+1181번 단어 정렬   
+https://www.acmicpc.net/problem/2750   
+2750번 수 정렬하기   
+https://www.acmicpc.net/problem/10814   
+10814번 나이순 정렬   
+https://www.acmicpc.net/problem/11650   
+11650번 좌표 정렬하기   
