@@ -72,3 +72,5 @@ https://www.acmicpc.net/problem/10814
 10814번 나이순 정렬   
 https://www.acmicpc.net/problem/11650   
 11650번 좌표 정렬하기   
+https://www.acmicpc.net/problem/11728   
+11728번 배열 합치기   
