@@ -74,3 +74,19 @@ https://www.acmicpc.net/problem/11650
 11650번 좌표 정렬하기   
 https://www.acmicpc.net/problem/11728   
 11728번 배열 합치기   
+
+>2020-06-27~2020-07-03   
+>>다이나믹 프로그래밍
+>>>https://blog.encrypted.gg/737   
+다이나믹 프로그래밍   
+>>>>https://www.acmicpc.net/problem/1003   
+1003번 피보나치 함수   
+https://www.acmicpc.net/problem/1149   
+1149번 RGB 거리   
+https://www.acmicpc.net/problem/1463   
+1463번 1로 만들기   
+https://www.acmicpc.net/problem/2225   
+2225번 합분해   
+https://www.acmicpc.net/problem/2293   
+2293번 동전 1   
+
