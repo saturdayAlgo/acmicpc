@@ -1,3 +1,4 @@
+package p01267;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,30 +6,27 @@ import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) {
-        int count;
-
-        int y = 0;
-        int m = 0;
-        int time = 0;
-
+        long first;
+        long second;
+        long count;
+        long temp;
         sc.init();
-        count = sc.nextInt();
-        for(int i=1; i<=count; i++){
-            time = sc.nextInt();
-            y +=  ((time/30)+1) * 10;
-            m +=  ((time/60)+1) * 15;
+        first = sc.nextLong();
+        second = sc.nextLong();
+        if(first>second){
+            temp = first;
+            first = second;
+            second = temp;
+        }else if(first==second){
+            System.out.println(0);
+            return;
+        }
+        count = (second-first-1);
+        System.out.println(count);
+        for(long i=first+1; i<second; i++){
+            System.out.print(i+" ");
+        }
 
-        }
-        String young = "Y";
-        String min = "M";
-        String space = " ";
-        if(y>m){
-            System.out.println(min+space+m);
-        }else if(y==m){
-            System.out.println(young+space+min+space+y);
-        }else{
-            System.out.println(young+space+y);
-        }
 
 
 
