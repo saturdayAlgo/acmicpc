@@ -90,3 +90,17 @@ https://www.acmicpc.net/problem/2225
 https://www.acmicpc.net/problem/2293   
 2293번 동전 1   
 
+>2020-07-06~2020-07-10   
+>>그리디
+>>>https://blog.encrypted.gg/755   
+그리디   
+>>>>https://www.acmicpc.net/problem/1931   
+1931번 회의실배정   
+https://www.acmicpc.net/problem/2217   
+2217번 로프   
+https://www.acmicpc.net/problem/10162   
+10162번 전자레인지   
+https://www.acmicpc.net/problem/11047   
+11047번 동전 0   
+https://www.acmicpc.net/problem/16120   
+16120번 PPAP   
