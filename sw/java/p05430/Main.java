@@ -1,4 +1,4 @@
-package p05430;
+package sw.java.p05430;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,7 +25,7 @@ public class Main {
 			String tokens = sc.next();
 			tokens = tokens.replace("[", "");
 			tokens = tokens.replace("]", "");
-			String res = "";
+			StringBuffer res = new StringBuffer();
 
 			String[] seta = tokens.split(",");
 			Deque<Integer> list = new ArrayDeque<Integer>();
@@ -55,18 +55,18 @@ public class Main {
 			if(errFlag) {
 				System.out.println("error");
 			} else {
-				res += "[";
+				res.append("[");
 				if(flag%2==0) {
 					while(!list.isEmpty()) {
-						res+=list.removeFirst() + ",";
+						res.append(list.removeFirst()).append(",");
 					}
 				} else {
 					while(!list.isEmpty()) {
-						res+=list.removeLast() + ",";
+						res.append(list.removeLast()).append(",");
 					}
 				}
-				res = res.substring(0,res.length()-1);
-				res += "]";
+				res = res.deleteCharAt(res.length()-1);
+				res.append("]");
 				System.out.println(res);
 			}
 			
