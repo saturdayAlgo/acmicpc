@@ -1,4 +1,4 @@
-package sw.java.p05430;
+package p05430;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
