@@ -16,14 +16,11 @@ public class Main {
 		K = Integer.parseInt(data[1]);
 		
 		int molecular = 1;
-		for(int i=N; i>0; i--) {
+		for(int i=N; i>K; i--) {
 			molecular *= i;
 		}
 		
 		int denominator = 1;
-		for(int i=K; i>0; i--) {
-			denominator*=i;
-		}
 		
 		for(int i=N-K; i>0; i--) {
 			denominator*=i;
