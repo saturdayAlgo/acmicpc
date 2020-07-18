@@ -1,33 +1,39 @@
-package p01267;
+package p02309;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) {
-        long first;
-        long second;
-        long count;
-        long temp;
+        int[] small = new int[9];
+        int sum = 0;
+
         sc.init();
-        first = sc.nextLong();
-        second = sc.nextLong();
-        if(first>second){
-            temp = first;
-            first = second;
-            second = temp;
-        }else if(first==second){
-            System.out.println(0);
-            return;
+        boolean isbreak = false;
+        for(int i=0; i<9; i++){
+            small[i] = sc.nextInt();
+            sum += small[i];
         }
-        count = (second-first-1);
-        System.out.println(count);
-        for(long i=first+1; i<second; i++){
-            System.out.print(i+" ");
+        for(int i=0; i<8; i++){
+            for(int j=i+1; j<9; j++){
+                if(sum - small[i] - small[j] == 100){
+                    small[i] = -1;
+                    small[j] = -1;
+                    isbreak = true;
+                    break;
+                }
+            }
+            if(isbreak){
+                break;
+            }
         }
-
-
+        Arrays.sort(small);
+        for(int i= 2; i<9; i++){
+            System.out.println(small[i]);
+        }
 
 
 

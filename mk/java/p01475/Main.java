@@ -1,40 +1,44 @@
-package p01267;
+package p01475;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) {
-        long first;
-        long second;
-        long count;
-        long temp;
         sc.init();
-        first = sc.nextLong();
-        second = sc.nextLong();
-        if(first>second){
-            temp = first;
-            first = second;
-            second = temp;
-        }else if(first==second){
-            System.out.println(0);
-            return;
+        int i=0;
+        int plastic[] = new int[10];
+        int max = -1;
+        String num = sc.readLine();
+        for(i=0;i<num.length();i++) {
+            int temp = Character.getNumericValue(num.charAt(i));
+            if(temp == 6 || temp == 9){
+                if(plastic[6]<plastic[9]){
+                    plastic[6]++;
+                }else{
+                    plastic[9]++;
+                }
+            }else{
+                plastic[temp]++;
+            }
         }
-        count = (second-first-1);
-        System.out.println(count);
-        for(long i=first+1; i<second; i++){
-            System.out.print(i+" ");
+
+        for(i=0;i<10;i++) {
+            if(max < plastic[i]) {
+                max = plastic[i];
+            }
         }
-
-
-
-
-
-
-
+        System.out.println(max);
 
     }
+
+
+
     static boolean isPrime1(int n){
         if(n==1) return false;
         for(int i =2; i < n; i ++ ){

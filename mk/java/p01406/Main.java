@@ -1,40 +1,57 @@
-package p01267;
+package p01406;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) {
-        long first;
-        long second;
-        long count;
-        long temp;
         sc.init();
-        first = sc.nextLong();
-        second = sc.nextLong();
-        if(first>second){
-            temp = first;
-            first = second;
-            second = temp;
-        }else if(first==second){
-            System.out.println(0);
-            return;
-        }
-        count = (second-first-1);
-        System.out.println(count);
-        for(long i=first+1; i<second; i++){
-            System.out.print(i+" ");
+        String input = sc.next();
+
+        Stack<Character> lStack = new Stack<Character>();
+        Stack<Character> rStack = new Stack<Character>();
+
+        for(int i = 0; i<input.length(); i++){
+            lStack.add(input.charAt(i));
         }
 
+        int n = sc.nextInt();
 
+        for (int i = 0; i < n; i++) {
 
-
-
-
-
-
+            String command = sc.next();
+            if (command.startsWith("L")) {
+                if(!lStack.empty()) {
+                    rStack.push(lStack.pop());
+                }
+            } else if (command.startsWith("D")) {
+                if(!rStack.empty()) {
+                    lStack.push(rStack.pop());
+                }
+            } else if (command.startsWith("B")) {
+                if(!lStack.empty()) {
+                    lStack.pop();
+                }
+            } else if (command.startsWith("P")) {
+                String[] pCommand = command.split(" ");
+                lStack.push(pCommand[1].toCharArray()[0]);
+            }
+        }
+        while(!lStack.empty()) {
+            rStack.push(lStack.pop());
+        }
+        while(!rStack.empty()) {
+            System.out.println(rStack.pop());
+        }
     }
+
+
+
     static boolean isPrime1(int n){
         if(n==1) return false;
         for(int i =2; i < n; i ++ ){
@@ -100,6 +117,7 @@ public class Main {
         }
     }
 }
+
 
 
 
