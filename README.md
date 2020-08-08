@@ -122,4 +122,19 @@ https://www.acmicpc.net/problem/16120
 | 11050     | 이항 계수 1            | 7841      | 14250 | 64.887%   |
 | 11051     | 이항 계수 2            | 6318      | 21383 | 39.010%   |
 | 11653     | 소인수분해             | 6463      | 15179 | 53.733%   |
-| 15894     | 수학은 체육과목 입니다 | 2371      | 5401  | 51.077%   |
+| 15894     | 수학은 체육과목 입니다 | 2371      | 5401  | 51.077%   |   
+
+>2020-08-10~2020-08-14   
+>>이분탐색
+>>>https://blog.encrypted.gg/791   
+이분탐색   
+>>>>https://www.acmicpc.net/problem/1920   
+1920번 수 찾기   
+https://www.acmicpc.net/problem/1822   
+1822번 차집합   
+https://www.acmicpc.net/problem/1253   
+1253번 좋다   
+https://www.acmicpc.net/problem/7453   
+7453번 합이 0인 네 정수   
+https://www.acmicpc.net/problem/10816   
+10816번 숫자 카드 2   
