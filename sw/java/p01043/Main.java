@@ -24,24 +24,44 @@ public class Main {
 			knownList[tmp] = 1;
 		}
 		
+		
 		ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
-		for(int i=0; i<=N+M; i++) {
+		for(int i=0; i<M; i++) {
 			list.add(new ArrayList<Integer>());
 		}
 		
 		for(int i=0; i<M; i++) {
 			st = new StringTokenizer(br.readLine());
 			int partyNum = Integer.parseInt(st.nextToken());
+			boolean canLie = true;
 			
 			for(int j=0; j<partyNum; j++) {
 				int tgt = Integer.parseInt(st.nextToken());
-				list.get(i+N+1).add(tgt);
-				list.get(tgt).add(i+N+1);
+				list.get(i).add(tgt);
+				if(knownList[tgt]>0) {
+					canLie = false;
+				}
 			}
 			
-			
+			if(!canLie) {
+				for(int num : list.get(i)) {
+					knownList[num] = 1;
+				}
+			}
 		}
-		
-		
+		int result = 0;
+		for(ArrayList<Integer> data : list) {
+			boolean canLie = true;
+			for(int num : data) {
+				if(knownList[num]>0) {
+					canLie = false;
+					break;
+				}
+			}
+			if(canLie) {
+				result++;
+			}
+		}
+		System.out.println(result);
 	}
 }

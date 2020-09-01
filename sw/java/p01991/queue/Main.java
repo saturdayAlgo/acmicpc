@@ -1,32 +1,47 @@
-package p01991;
+package p01991.queue;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
 	static int N;
 	static Map<String, List<String>> list;
 	static StringBuffer sb;
+	static Queue<String> qu;
+	static Stack<String> st;
 	
 	private static void preOrder(String str) {
-		if(".".equals(str)) return;
+		HashSet<String> visited = new HashSet<>();
+		st = new Stack<String>();
+		st.add(str);
+		visited.add(str);
 		
-		sb.append(str);
-		preOrder(list.get(str).get(0));
-		preOrder(list.get(str).get(1));
+		while(!st.isEmpty()) {
+			String tgt = st.pop();
+			sb.append(tgt);
+			String left = list.get(tgt).get(0);
+			String right = list.get(tgt).get(1);
+			
+			if(!visited.contains(right) && !right.equals(".")) {
+				st.add(right);
+				visited.add(right);
+			}
+			if(!visited.contains(left) && !left.equals(".")) {
+				st.add(left);
+				visited.add(left);
+			}
+		}
 	}
 	
 	private static void inOrder(String str) {
-		if(".".equals(str)) return;
-		
-		inOrder(list.get(str).get(0));
-		sb.append(str);
-		inOrder(list.get(str).get(1));
 	}
 	
 	private static void postOrder(String str) {
