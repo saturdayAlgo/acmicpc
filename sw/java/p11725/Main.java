@@ -33,6 +33,16 @@ public class Main {
 		qu.add(1);
 		visited[1] = 1;
 		parent[1] = 0;
+		
+		/*
+		 *	1 
+		 * 	4			6
+		 * 	2 7			3	
+		 * 				5
+		 * 
+		 * 
+		 */
+		
 		while(!qu.isEmpty()) {
 			int tgt = qu.poll();
 			

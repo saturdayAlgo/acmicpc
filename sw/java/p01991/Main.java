@@ -12,15 +12,13 @@ public class Main {
 	static int N;
 	static Map<String, List<String>> list;
 	static StringBuffer sb;
-	
 	private static void preOrder(String str) {
 		if(".".equals(str)) return;
 		
 		sb.append(str);
-		preOrder(list.get(str).get(0));
-		preOrder(list.get(str).get(1));
+		preOrder(list.get(str).get(0)); // B D H J
+		preOrder(list.get(str).get(1));	// C E F G Z
 	}
-	
 	private static void inOrder(String str) {
 		if(".".equals(str)) return;
 		
@@ -28,10 +26,14 @@ public class Main {
 		sb.append(str);
 		inOrder(list.get(str).get(1));
 	}
-	
+	/*
+	A(postOrder1)-> B(postOrder1)-> D(postOrder1,2) -> D("app")-> 
+	B(postOrder2) -> B("app") -> A(postOrder2) -> C(postOrder1) -> 
+	E(postOrder1,2) -> E("app") -> C(postOrder2) -> F(postOrder1,2) ->
+	G(postOrder1,2) -> G("app") -> F("app") -> C("app") -> A("app")
+	*/
 	private static void postOrder(String str) {
 		if(".".equals(str)) return;
-		
 		postOrder(list.get(str).get(0));
 		postOrder(list.get(str).get(1));
 		sb.append(str);

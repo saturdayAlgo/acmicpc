@@ -18,13 +18,20 @@ public class Main {
 		int K = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 		ArrayList<ArrayList<Integer>> dummyAddedList = new ArrayList<>();
-
+		
+		//0~14
 		for (int i = 0; i <= N + M; i++) {
 			dummyAddedList.add(new ArrayList<>());
 		}
 
-		for (int i = 0; i < M; i++) {
-			int dummyLink = N + i + 1;
+		// 1~9		->	각 역의 인접 리스트
+		// 10~14	->	각 하이퍼튜브의 인접리스트
+		
+		// 1 2 3
+		// i = 1, dummyLink = 10
+		// dummyAddedList.get(1~3).add(10)
+		for (int i = 1; i <= M; i++) {
+			int dummyLink = N + i;
 			st = new StringTokenizer(br.readLine(), " ");
 
 			for (int j = 0; j < K; j++) {
